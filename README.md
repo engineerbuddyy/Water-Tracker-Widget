@@ -62,7 +62,7 @@ implementation("androidx.glance:glance-material3:1.1.1")
 
 2️⃣ Add the receiver inside AndroidManifest.xml
 
-<receiver
+    <receiver
     
     android:name=".ui.theme.WaterTrackerWidgetReceiver"
     
@@ -81,7 +81,7 @@ implementation("androidx.glance:glance-material3:1.1.1")
         
         android:resource="@xml/water_tracker_widget_info" />
         
-</receiver>
+    </receiver>
 
 
 ## 🌟 Widget Preview
