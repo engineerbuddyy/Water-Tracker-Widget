@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Glass outline with darker stroke for visibility in both modes -->
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#757575"
+        android:strokeWidth="2"
+        android:pathData="M7,3 L17,3 L15.5,20 L8.5,20 Z"/>
+
+    <!-- Water fill -->
+    <path
+        android:fillColor="#4fc3f7"
+        android:pathData="M8.8,11 L15.2,11 L14.7,19 L9.3,19 Z"/>
+
+</vector>
