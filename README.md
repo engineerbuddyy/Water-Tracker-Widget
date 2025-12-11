@@ -40,10 +40,15 @@ No RemoteViews headache
 
 📦 Tech Stack
 Component	Purpose
+
 Glance AppWidget	Build widget UI using Compose-like API
+
 Material 3 (Glance)	Styling & theming
+
 DataStore Preferences	Persistent state storage
+
 Vector Drawable	Water glass icon
+
 Kotlin	Logic & architecture
 
 
@@ -51,19 +56,38 @@ Kotlin	Logic & architecture
 1️⃣ Add dependencies
 
 implementation("androidx.glance:glance-appwidget:1.1.1")
+
 implementation("androidx.glance:glance-material3:1.1.1")
 
 
 2️⃣ Add the receiver inside AndroidManifest.xml
 
 <receiver
+    
     android:name=".ui.theme.WaterTrackerWidgetReceiver"
+    
     android:exported="false">
+    
     <intent-filter>
+    
         <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+        
     </intent-filter>
+    
     <meta-data
+    
         android:name="android.appwidget.provider"
+
+        
         android:resource="@xml/water_tracker_widget_info" />
+        
 </receiver>
+
+
+## 🌟 Widget Preview
+
+Here's how the Water Tracker looks on your home screen 👇
+
+<img src="WidgetsPreview.jpeg" width="350" style="border-radius: 16px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);" />
+
 
